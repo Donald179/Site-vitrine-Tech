@@ -38,18 +38,23 @@
 </form>
 
 <div id="message"></div>
-
 <script>
-document.getElementById('form-produit').addEventListener('submit', async (e) => {
+    document.getElementById('form-produit').addEventListener('submit', async (e) => {
   e.preventDefault();
   const formData = new FormData(e.target);
   const res = await fetch('ajouter_produit.php', {
     method: 'POST',
     body: formData
   });
-  const text = await res.text();
-  document.getElementById('message').innerText = text;
+  const html = await res.text();
+
+  // Ajoute le produit à la fin de la div .catalogue
+  document.querySelector('.catalogue').insertAdjacentHTML('beforeend', html);
+
+  // Message de confirmation (optionnel)
+  document.getElementById('message').innerText = "✅ Produit ajouté avec succès !";
 });
+
 </script>
 
     </main>

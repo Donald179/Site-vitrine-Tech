@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $image = $_FILES['image'];
 
   // 📁 Dossier de stockage des images
-  $target_dir = "uploads/";
+  $target_dir = "image/";
   if (!is_dir($target_dir)) mkdir($target_dir, 0777, true);
 
   // Nom unique pour éviter les conflits
