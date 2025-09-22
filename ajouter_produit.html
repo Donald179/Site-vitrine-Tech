@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajouter produits</title>
+    <link rel="stylesheet" href="ajouter_produit.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="">Accueil</a></li>
+                <li><a href="">Produits</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <form id="form-produit" enctype="multipart/form-data">
+  <input type="text" name="nom" placeholder="Nom du produit" required />
+  
+  <select name="categorie" required>
+    <option value="Tech">Tech</option>
+    <option value="Accessoire">Accessoire</option>
+    <option value="Service">Service</option>
+  </select>
+  
+  <textarea name="description" placeholder="Détails du produit" required></textarea>
+  
+  <input type="file" name="image" accept="image/*" required />
+  
+  <button type="submit">Ajouter</button>
+</form>
+
+<div id="message"></div>
+
+<script>
+document.getElementById('form-produit').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const formData = new FormData(e.target);
+  const res = await fetch('ajouter_produit.php', {
+    method: 'POST',
+    body: formData
+  });
+  const text = await res.text();
+  document.getElementById('message').innerText = text;
+});
+</script>
+
+    </main>
+    
+</body>
+</html>

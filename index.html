@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Votre Expert en Technologie</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  
+</head>
+
+<!-- le corps de la page -->
+<body>
+    <!-- en-tête avec logo et titre -->
+  <header> 
+    <div class="logo-titre">
+      <img src="image/icone.png" alt="Logo">
+      <h1>TechExpert</h1>
+    </div>
+
+    <!-- les liens de navigation -->
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="ajouter_produit.html">Produits</a>
+        <a href="#contact">Contact</a>
+    </nav>
+  </header>
+<br><br><br><br>
+<!-- section d'accueil -->
+<div class="accueil">
+    <div class="partie1">
+        <h2> Expert Certifié</h2>
+        <br><br><br>
+        <p1>Votre Expert en</p1>
+        <p2> Technologie</p2>
+        <br><br><br>
+        <p>Découvrons une sélection soigneusement choisis de produits Tech innovant et de bénéficier de conseils pour optimiser votre expérience Numérique.</p>
+        <br><br><br>
+        <button onclick="scrollToSection()">Voir Nos Produits &#8594;</button>
+        <script>
+          function scrollToSection(){
+            document.getElementById("accueil_produits").scrollIntoView({ behavior:"smooth"});
+          }
+        </script>
+    </div>
+    <div class="partie2">
+        <div class="client">
+            <h2>500+</h2>
+            <h5>Clients Satisfaits</h5>
+        </div>
+        <div class="statistiques">
+            <div class="expériences">
+                <p>Expériences: </p>
+                <p>8+ années</p>
+            </div>
+            <div class="avis">
+                <p>Produits vendus:</p>
+                <p>2000+</p>
+            </div>
+            <div class="note">
+                <p>Note Moyenne:</p>
+                <p>⭐⭐⭐⭐⭐ 4.0</p>
+            </div>
+        </div>
+    </div>
+    
+</div>
+  
+<div id="accueil_produits">
+    <h2>Promotion de rentrée scolaire</h2>
+    <p>Une gamme soigneusement choisie de produits tech de qualité supérieure pour répondre à tous vos besoins numériques.</p>
+</div>
+<!-- section des produits -->
+  <section id="produits">
+    <h2>Produits Sélectionnés</h2>
+    <div class="catalogue">
+      <div class="product-card">
+     <span class="badge">Promo</span>
+     <img src="image/redmiA5.jfif" alt="Smartphone Pro Max">
+     <p> Smartphones</p>
+     <h3>Redmi A5</h3>
+     <ul>
+      <li>128GB</li>
+      <li>5G</li>
+      <li>8GB RAM</li>
+   </ul>
+  <p class="price">
+    <span class="old-price">60.000FCFA</span>
+    <span class="new-price">55.000FCFA</span>
+  </p>
+<a class="whatsapp-btn" href="#" data-nom="Redmi A5" data-img="redmiA5.jfif">Ajouter au panier</a>
+</div>
+<div class="product-card">
+     <span class="badge">Promo</span>
+     <img src="image/dell1.jpg" alt="Smartphone Pro Max">
+     <p> Ordinateurs </p>
+     <h3>Dell Lattitude 8390</h3>
+     <ul>
+      <li>256GB SSD</li>
+      <li>Ecran 14 Tactile</li>
+      <li>8GB RAM</li>
+   </ul>
+  <p class="price">
+    <span class="old-price">200.000FCFA</span>
+    <span class="new-price">190.000FCFA</span>
+  </p>
+<a class="whatsapp-btn" href="#" data-nom="Dell Lattitude 8390" data-img="dell1.jpg">Ajouter au panier</a>
+</div>
+    <div class="product-card">
+     <span class="badge">Promo</span>
+     <img src="image/IphoneXR.jfif" alt="Smartphone Pro Max">
+     <p> Smartphone </p>
+     <h3>Iphone XR</h3>
+     <ul>
+      <li>128GB</li>
+   </ul>
+  <p class="price">
+    <span class="old-price">130.000FCFA</span>
+    <span class="new-price">120.000FCFA</span>
+  </p>
+  <a class="whatsapp-btn" href="https://wa.me/226XXXXXXXXX?text=Bonjour%2C+je+suis+int%C3%A9ress%C3%A9+par+le+Smartphone+Pro+Max+%21" target="_blank">Ajouter au panier</a>
+</div>
+    <div class="product-card">
+     <span class="badge">Promo</span>
+     <img src="image/iphone11.jfif" alt="Smartphone Pro Max">
+     <p> Smartphone </p>
+     <h3>Iphone 11</h3>
+     <ul>
+      <li>128GB</li>
+   </ul>
+  <p class="price">
+    <span class="old-price">135.000FCFA</span>
+    <span class="new-price">130.000FCFA</span>
+  </p>
+  <a class="whatsapp-btn" href="https://wa.me/226XXXXXXXXX?text=Bonjour%2C+je+suis+int%C3%A9ress%C3%A9+par+le+Smartphone+Pro+Max+%21" target="_blank">Ajouter au panier</a>
+</div>
+      <div class="product-card">
+     <span class="badge">Promo</span>
+     <img src="image/redmiA5.jfif" alt="Smartphone Pro Max">
+     <p> Smartphones</p>
+     <h3>Iphone 11 PRO</h3>
+     <ul>
+      <li>128GB</li>
+      <li>5G</li>
+   </ul>
+  <p class="price">
+    <span class="old-price">180.000FCFA</span>
+    <span class="new-price">177.500FCFA</span>
+  </p>
+<a class="whatsapp-btn" href="#" data-nom="Iphone 11 PRO" data-img="iphone11pro.jpg">Ajouter au panier</a>
+</div>
+<?php include("produits.html"); ?>
+</div>
+
+  </section>
+  <script>
+  document.querySelectorAll('.whatsapp-btn').forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      const nom = this.getAttribute('data-nom');
+      const img = this.getAttribute('data-img');
+      const message = `Je suis intéressé, plus en savoir plus sur cet article : ${nom} -https://donald179.github.io/Site-vitrine-Tech/image/${img}`;
+      const encodedMessage = encodeURIComponent(message);
+      const whatsappURL = `https://wa.me/22655757299?text=${encodedMessage}`;
+      window.open(whatsappURL, '_blank');
+    });
+  });
+</script>
+
+  <footer>
+    <section class="partie1">
+      <div class="logo-titre">
+        <img src="image/icone.png" alt="">
+        <h1>TechExpert</h1>
+      </div>
+      <div class="phrase-de-fin">
+        <p>Votre partenaire de confiance pour vos besoins Tech. Expertise, qualité et service client d'exception.</p>
+      </div>
+      <div class="reseaux-sociaux">
+        <a href="www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+        <a href="www.tiktok.com"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="www.whatsapp.com"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </section>
+    <section class="partie2">
+      <h2>Contact</h2>
+      <p>
+        <i class="fa-regular fa-envelope"></i> <!-- Icône email -->
+        lamiendonaldo179@gmail.com
+      <p>
+              <p>
+        <i class="fas fa-phone"></i> <!-- Icône téléphone -->
+        +226 55-75-72-99
+      </p>
+        <i class="fas fa-map-marker-alt"></i> <!-- Icône adresse -->
+       Secteur 18, Bobo-Dioulasso, Burkina Faso
+      </p>
+    </section>
+    <section class="partie3">
+      <h2>Liens Rapides</h2>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="#produits">Nos Produits</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </section>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

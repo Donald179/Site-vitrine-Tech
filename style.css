@@ -1,0 +1,535 @@
+/* style.css */
+
+/* ----------- Styles généraux ----------- */
+body {
+  margin: 0;
+  background: #ffffff;
+  color: #ffffff;
+}
+
+/* ----------- Header (en-tête) ----------- */
+header {
+  background: #f5faff;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  display: flex; 
+  position: fixed;      /* Fixe le header en haut de la page */
+  top: 0;               /* Positionne le header en haut */
+  left: -20px;          /* Décalage à gauche (à ajuster si besoin) */
+  width: 100%;          /* Prend toute la largeur */
+  z-index: 1000;        /* S'affiche au-dessus du contenu */
+  align-items: center;  /* Centre verticalement les éléments */
+  justify-content: space-between; /* Sépare le logo/titre et la navigation */
+}
+
+header img {
+  height: 50px;         /* Taille du logo */
+  margin-right: 10px;   /* Espace entre le logo et le titre */
+  margin-left: 20px;
+}
+.statistiques .expériences p{
+  color: #000000;
+}
+.avis p{
+  color: #000000;
+}
+.note p{
+  color: #000000;
+}
+header h1 {
+  margin: 0;
+  color: #000000;
+  text-align: left;     /* Aligne le titre à gauche */
+}
+
+nav {
+  margin-bottom: 0;     /* Supprime le margin si dans le header */
+}
+
+nav a {
+  margin: 0 15px;       /* Espace entre les liens de navigation */
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+/* ----------- Titres généraux ----------- */
+h1, h2 {
+  margin-bottom: 10px;
+}
+
+/* ----------- Section produits ----------- */
+.produits .grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  width: 250px;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Uniformise la taille des images produits */
+.card img {
+  width: 220px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* ----------- Guides d'expert ----------- */
+.guides {
+  padding: 20px;
+  background: #fff;
+}
+
+.guides ul {
+  list-style: none;
+  padding: 0;
+}
+
+.guides li {
+  margin: 10px 0;
+  font-size: 1.1em;
+}
+
+/* ----------- Logo et titre ----------- */
+.logo-titre {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espace entre logo et titre */
+}
+
+/* ----------- Section accueil ----------- */
+.accueil {
+  display: flex;
+  align-items: center; /* Centre verticalement les deux parties */
+  background: hwb(218 87% 1%);
+  padding: 50px 20px;
+  gap: 40px; /* Espace entre partie1 et partie2 */
+}
+
+/* Pour d'autres sections éventuelles */
+section1, section2, section3, section4 {
+  flex: 1;
+}
+
+/* Partie 1 : texte à gauche */
+.accueil section1 {
+  text-align: left;
+}
+
+.accueil section1 h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #00ff6e94;
+}
+
+/* Fond noir pour la section produits */
+
+.produits h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+/* Les deux parties prennent chacune 50% de la largeur */
+.accueil > .partie1,
+.accueil > .partie2 {
+  width: 50%;
+  flex: none; /* Empêche flex: 1 de prendre toute la place */
+}
+
+/* Partie 2 : texte centré */
+.accueil .partie2 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Apparence de la "case" partie2 */
+.accueil > .partie2 {
+  background: #fcfcfcc1;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  padding: 30px 20px;
+  margin: 10px;
+  flex: 1;
+  min-width: 250px;
+  border: 1px solid #e0e0e0;
+}
+
+/* Couleur des titres et textes dans partie1 */
+.accueil .partie1 h2 {
+  color: blue;
+}
+.accueil .partie1 p2 {
+  color: blue;
+}
+
+/* Boutons de partie1 */
+.accueil .partie1 .bouton #bouton1 {
+  background: blue;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.accueil .partie1 .bouton #bouton1:hover {
+  transform: scale(1.1);
+}
+.accueil .partie1 .bouton #bouton2 {
+  background: rgb(255, 255, 255);
+  color: rgb(33, 14, 247);
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 20px;
+  border-color: blue;
+}
+.accueil .partie1 .bouton #bouton2:hover {
+  color: white;
+  background-color: blue;
+}
+
+/* Styles des textes personnalisés dans partie1 */
+.accueil .partie1 p1 {
+  font-size: 3.8em;
+  margin-bottom: 20px;
+  color: #000000;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.accueil .partie1 p2 {
+  font-size: 3.8em;
+  margin-bottom: 20px;
+  color: blue;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.accueil .partie1 p {
+  font-size: 1.4em;
+  margin-bottom: 20px;
+  color: #000000;
+  font-weight: normal;
+}
+
+/* Partie2 : client et statistiques */
+.accueil .partie2 h2 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 2.8em;
+}
+.accueil .partie2 h5 {
+  color: rgb(255, 245, 245);
+  text-align: center;
+}
+.accueil .partie2 .client {
+  border-radius: 20px;
+  padding: 150px;
+  margin: 10px;
+  text-align: center;
+  color: white;
+  font-size: 1.2em;
+  background-color: hsla(229, 89%, 57%, 0.886);
+}
+
+/* ----------- Responsive (mobile) ----------- */
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    position: static; /* Pour éviter les soucis sur mobile */
+  }
+  .logo-titre {
+    margin-bottom: 10px;
+  }
+  nav {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  nav a {
+    margin: 5px 0;
+    font-size: 1em;
+  }
+}
+
+/* Espace horizontal entre les boutons */
+.accueil .partie1 .bouton {
+  display: flex;
+  gap: 15px;
+}
+
+/* Statistiques dans partie2 */
+.accueil .partie2 .statistiques {
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.accueil .partie2 .statistiques .expériences p {
+  color: black;
+}
+.statistiques .expériences {
+  display: flex;
+  gap: 300px;
+  font-weight: bold;
+}
+.statistiques .avis {
+  display: flex;
+  gap: 300px;
+  font-weight: bold;
+}
+.statistiques .note {
+  display: flex;
+  gap: 240px;
+  font-weight: bold;
+}
+
+/* ----------- Section promotion produits ----------- */
+#accueil_produits {
+  text-align: center;
+  margin: 40px 0 20px 0;
+}
+#accueil_produits h2 {
+  font-size: 2em;
+  color: #000000;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#accueil_produits p {
+  font-size: 1.2em;
+  color: #000000;
+  margin-top: 10px;
+}
+.product-card {
+  margin-left: 40px;
+  width: 250px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', sans-serif;
+  position: relative;
+}
+.product-card:hover {
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.badge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: #0062ff;
+  color: rgb(255, 255, 255);
+  padding: 5px 10px;
+  font-size: 0.8em;
+  border-radius: 5px;
+}
+.produits .product-card p{
+  color: #1111ff;
+  margin: 10px 20px;
+}
+.product-card h3 {
+  margin: 10px 20px;
+  color: #333;
+}
+.product-card ul{
+  list-style: none;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  color: #555;
+  gap: 10px;
+}
+.product-card ul li {
+  padding-left: 2.4px;
+  padding-right: 2.4px;
+  padding-top: 2.4px;
+  padding-bottom: 2.4px;
+  font-size: 0.9em;
+  background-color: #eeebeb;
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+  font-family:'Times New Roman', Times, serif;
+}
+.price{
+  font-size: 1.0em;
+  color: #000000;
+  margin: 10px 20px;
+  font-weight: bold;
+}
+.price .old-price {
+  text-decoration: line-through;
+  color: #888;
+  font-weight: normal;
+  margin-left: 10px;
+}
+.price .new-price {
+  color: #000000;
+}
+.whatsapp-btn {
+  text-align: center;
+  display: inline-block;
+  background: #0026ff;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin: 20px 50px;
+}
+.whatsapp-btn:hover {
+  background: #4949f2;
+} 
+/* ----------- Section astuces ----------- */
+.astuce {
+  padding: 20px;
+  background: #fff;
+  text-align: center;
+}
+.astuce h2 {
+  color: #000000;
+  margin-bottom: 10px;
+}
+.astuce p {
+  color: #555555;
+  font-size: 1em;
+}
+footer {
+  background: #000000;
+  color: #ffffff;
+  text-align: center;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  margin-top: 40px;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+}
+footer img {
+  height: 50px;         /* Taille du logo dans le footer */
+}
+footer{
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  gap: 90px;
+}
+footer section .partie1{
+  flex: 1  40%;
+  min-width: 400px;
+  text-align: left;
+  padding: 50px;
+}
+footer section .partie2{
+  flex: 2 30%;
+  padding: 50px;
+}
+footer section .partie3{
+  flex: 3 30%;
+}
+footer section .partie1 img{
+  height: 0px;
+  margin-right: 10px;
+}
+.partie2{
+  text-align: left;
+}
+.partie3{
+  text-align: left;
+  padding: 0;
+  margin: auto;
+}
+
+.partie3 ul {
+  list-style: none;
+  padding: 0;
+}
+.partie3 ul li {
+  list-style: none;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.partie3 ul li a {
+  text-decoration: none;
+  color: #fffbfb;
+}
+.partie3 ul li a:hover {
+  text-decoration: underline;
+  color: rgb(255, 255, 255);
+}
+.fa-envelope, .fa-phone, .fa-map-marker-alt {
+  margin-right: 10px;
+  color: #26d0ff;
+}
+.phrase-de-fin{
+  width: 400px;
+  margin: auto;
+  text-align: center;
+}
+
+/* ...existing code... */
+footer .reseaux-sociaux a {
+  margin: 0 8px;
+  color: #333;
+  font-size: 1.6em;
+  transition: color 0.2s;
+  text-decoration: none;
+}
+.reseaux-sociaux{
+  text-align: center;
+}
+.fa-brands{
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+}
+.fa-facebook:hover{
+  color: #0026ff;
+  background-color: white;
+}
+.fa-tiktok:hover{
+  color: #000000;
+  background-color: rgb(255, 255, 255);
+}
+.fa-whatsapp:hover{
+  color: green;
+  background-color: white;
+}
+.catalogue{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.partie1 button{
+  background-color: #0026ff;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+.partie1 button:hover{
+  transform: scale(1.1);
+}
