@@ -22,7 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   move_uploaded_file($image["tmp_name"], $image_path);
 
   // 🔧 Connexion à la base de données
-  $pdo = new PDO("mysql:host=localhost;dbname=ton_site", "user", "password");
+  $pdo = new PDO("mysql:host=localhost;dbname=vitrine", "yerevabe", "Donaldo179@");
   $stmt = $pdo->prepare("INSERT INTO produits (nom, categorie, description, image_url, prix) VALUES (?, ?, ?, ?, ?)");
   $stmt->execute([$nom, $categorie, $description, $image_path, $prix]);
 
@@ -48,3 +48,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   echo $html;
 }
 ?>
+<script>
+    const catalogue = document.querySelector('.catalogue');
+catalogue.insertAdjacentHTML('beforeend', text); // text = HTML retourné par PHP
+</script>
